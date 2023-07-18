@@ -1,0 +1,204 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 19, Column: 19 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_19_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 23, Column: 24 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_23_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 31, Column: 24 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_31_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 36, Column: 24 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_36_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 4, Column: 0 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_19_3
+  - String:          ''' ('
+  - LoopLoc:         '../../src/top.cpp:19:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 4, Column: 0 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_23_4
+  - String:          ''' ('
+  - LoopLoc:         '../../src/top.cpp:23:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 4, Column: 0 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_31_5
+  - String:          ''' ('
+  - LoopLoc:         '../../src/top.cpp:31:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../src/top.cpp, Line: 4, Column: 0 }
+Function:        _Z3topRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EEELi0EEERNS0_INS1_IS2_ILi8EELm0ELm0ELm0EEELi0EEEii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_36_6
+  - String:          ''' ('
+  - LoopLoc:         '../../src/top.cpp:36:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 65, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IhL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXntsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 65, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 65, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IhL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXntsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::mantissa() const'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 532, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 65, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 65, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IhL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXntsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 514, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 65, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IhdET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 65, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                   Line: 67, Column: 0 }
+Function:        __hls_fptoui_double_i8
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptoui_double_i8
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: ../../src/rgb2gray.cpp, Line: 4, Column: 0 }
+Function:        _Z14rgb2gray_pixel9rgb_pixel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptoui_double_i8
+    DebugLoc:        { File: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 67, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'rgb2gray_pixel(rgb_pixel)'
+    DebugLoc:        { File: ../../src/rgb2gray.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...

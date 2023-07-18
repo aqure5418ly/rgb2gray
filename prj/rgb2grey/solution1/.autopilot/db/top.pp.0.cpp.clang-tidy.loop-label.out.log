@@ -1,0 +1,35 @@
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:1559:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:1559:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2533:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2533:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2547:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2547:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2561:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:2561:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:4172:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:4172:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:6557:3: warning: Added loop label VITIS_LOOP_17_1:   [xilinx-label-all-loops]
+  for (int i = 0; i < rows; i++) {
+  ^~~
+  VITIS_LOOP_17_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:6557:3: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:6559:5: warning: Added loop label VITIS_LOOP_19_2:   [xilinx-label-all-loops]
+    for (int j = 0; j < cols; j ++) {
+    ^~~
+    VITIS_LOOP_19_2: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/solution1/.autopilot/db/top.pp.0.cpp:6559:5: note: FIX-IT applied suggested code changes

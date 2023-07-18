@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:29.225+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between axis read operation ('empty_33') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.207+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 14, distance = 1, offset = 1) between axis read operation ('empty_32') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.164+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1) between axis read operation ('empty_25') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.119+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1) between axis read operation ('empty_24') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.042+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis read operation ('empty_23') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.038+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis read operation ('empty_22') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:47:28.032+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_sitodp_32ns_64_6_no_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:54:49.551+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:54:47.053+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:54:43.353+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_sitodp_32ns_64_6_no_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:50:36.655+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:50:34.176+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="rgb2gray_2" solutionName="solution1" date="2023-07-16T23:50:30.787+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

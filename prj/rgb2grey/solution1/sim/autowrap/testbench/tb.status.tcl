@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /root/Xilinx/rgb2grey/prj/rgb2grey/solution1/./sim/autowrap/testbench/top.cpp_pre.cpp.tb.cpp

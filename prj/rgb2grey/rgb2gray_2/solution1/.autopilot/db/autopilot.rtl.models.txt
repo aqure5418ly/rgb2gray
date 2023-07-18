@@ -1,0 +1,17 @@
+top_dadd_64ns_64ns_64_7_full_dsp_0
+top_dmul_64ns_64ns_64_7_max_dsp_0
+top_sitodp_32ns_64_6_no_dsp_0
+top_flow_control_loop_pipe_sequential_init
+top_mul_32ns_28ns_60_2_1
+top_CTRL_s_axi
+top_regslice_both
+top_regslice_both
+top_regslice_both
+top_regslice_both
+top_regslice_both
+top_regslice_both
+top_regslice_both
+top_regslice_both
+rgb2gray_pixel
+top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2
+top

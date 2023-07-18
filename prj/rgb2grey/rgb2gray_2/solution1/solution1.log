@@ -1,0 +1,192 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.03 seconds; current allocated memory: 750.457 MB.
+INFO: [HLS 200-10] Analyzing design file '../../src/top.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../src/rgb2gray.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.56 seconds. CPU system time: 0.85 seconds. Elapsed time: 7.98 seconds; current allocated memory: 751.488 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:19:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_23_4' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:23:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_31_5' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:31:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_6' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:36:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_3' (../../src/top.cpp:19:19) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_23_4' (../../src/top.cpp:23:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_31_5' (../../src/top.cpp:31:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_6' (../../src/top.cpp:36:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' into 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' into '__hls_fptoui_double_i8' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:67:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i8' into 'rgb2gray_pixel(rgb_pixel)' (../../src/rgb2gray.cpp:4:0)
+INFO: [HLS 214-364] Automatically inlining function 'rgb2gray_pixel(rgb_pixel)' to improve effectiveness of pipeline pragma in function 'top(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (../../src/top.cpp:33:16)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.35 seconds. CPU system time: 0.3 seconds. Elapsed time: 5.67 seconds; current allocated memory: 752.676 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 752.676 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.19 seconds; current allocated memory: 779.090 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 814.695 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.38 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.42 seconds; current allocated memory: 870.305 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_16_1' (../../src/top.cpp:16:29) in function 'top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 889.535 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between axis read operation ('empty_19') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between axis read operation ('empty_20') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis read operation ('empty_21') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis read operation ('empty_22') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between axis read operation ('empty_29') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between axis read operation ('empty_33') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.02 seconds. Elapsed time: 10.03 seconds; current allocated memory: 756.363 MB.
+INFO: [HLS 200-10] Analyzing design file '../../src/top.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../src/rgb2gray.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.13 seconds. CPU system time: 0.96 seconds. Elapsed time: 8.66 seconds; current allocated memory: 757.430 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:19:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_23_4' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:23:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_31_5' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:31:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_6' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:36:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_3' (../../src/top.cpp:19:19) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_23_4' (../../src/top.cpp:23:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_31_5' (../../src/top.cpp:31:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_6' (../../src/top.cpp:36:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' into 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' into '__hls_fptoui_double_i8' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:67:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i8' into 'rgb2gray_pixel(rgb_pixel)' (../../src/rgb2gray.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.28 seconds. CPU system time: 0.32 seconds. Elapsed time: 5.6 seconds; current allocated memory: 758.461 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 758.461 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 780.004 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.28 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.3 seconds; current allocated memory: 819.664 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.35 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 872.383 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_16_1' (../../src/top.cpp:16:29) in function 'top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 901.242 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rgb2gray_pixel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'rgb2gray_pixel'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 28, function 'rgb2gray_pixel'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.18 seconds; current allocated memory: 901.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 901.242 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis read operation ('empty_22') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis read operation ('empty_23') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1) between axis read operation ('empty_24') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1) between axis read operation ('empty_25') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 10.02 seconds; current allocated memory: 750.430 MB.
+INFO: [HLS 200-10] Analyzing design file '../../src/top.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../src/rgb2gray.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.68 seconds. CPU system time: 0.95 seconds. Elapsed time: 8.18 seconds; current allocated memory: 751.496 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:19:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_23_4' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:23:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_31_5' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:31:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_6' is marked as complete unroll implied by the pipeline pragma (../../src/top.cpp:36:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_3' (../../src/top.cpp:19:19) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_23_4' (../../src/top.cpp:23:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_31_5' (../../src/top.cpp:31:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_6' (../../src/top.cpp:36:24) in function 'top' completely with a factor of 16 (../../src/top.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' into 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' into '__hls_fptoui_double_i8' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:67:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i8' into 'rgb2gray_pixel(rgb_pixel)' (../../src/rgb2gray.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.14 seconds. CPU system time: 0.33 seconds. Elapsed time: 5.47 seconds; current allocated memory: 752.543 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 752.543 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 778.086 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 813.742 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.35 seconds; current allocated memory: 866.461 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_16_1' (../../src/top.cpp:16:29) in function 'top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 895.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rgb2gray_pixel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'rgb2gray_pixel'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 28, function 'rgb2gray_pixel'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.18 seconds; current allocated memory: 895.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 895.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis read operation ('empty_22') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis read operation ('empty_23') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1) between axis read operation ('empty_24') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+WARNING: [HLS 200-880] The II Violation in module 'top_Pipeline_VITIS_LOOP_16_1_VITIS_LOOP_17_2' (loop 'VITIS_LOOP_16_1_VITIS_LOOP_17_2'): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1) between axis read operation ('empty_25') on port 'src_V_data_V' and axis read operation ('empty') on port 'src_V_data_V'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================

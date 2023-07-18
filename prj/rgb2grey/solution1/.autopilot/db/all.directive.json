@@ -1,0 +1,64 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/root\/Xilinx\/rgb2grey\/prj\/rgb2grey\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "both",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "src"
+              },
+              {
+                "name": "register",
+                "value": ""
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rgb2gray_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/root\/Xilinx\/rgb2grey\/prj\/rgb2grey\/solution1\/csynth.tcl",
+          "sourceLine": "21",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "rgb2gray_top"
+              }]
+          }
+        },
+        {
+          "functionName": "rgb2gray_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/root\/Xilinx\/rgb2grey\/prj\/rgb2grey\/solution1\/csynth.tcl",
+          "sourceLine": "21",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "rgb2gray_top"
+              }]
+          }
+        }
+      ]
+    }]}

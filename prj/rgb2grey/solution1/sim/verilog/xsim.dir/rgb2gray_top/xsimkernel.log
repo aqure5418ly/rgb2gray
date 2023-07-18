@@ -1,0 +1,4 @@
+Running: xsim.dir/rgb2gray_top/xsimk -simmode gui -wdb rgb2gray_top.wdb -simrunnum 0 -socket 39499
+Design successfully loaded
+Design Loading Memory Usage: 30716 KB (Peak: 30716 KB)
+Design Loading CPU Usage: 30 ms

@@ -1,0 +1,14 @@
+remark: ../../src/top.cpp:19:19: Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma
+remark: ../../src/top.cpp:23:24: Loop 'VITIS_LOOP_23_4' is marked as complete unroll implied by the pipeline pragma
+remark: ../../src/top.cpp:31:24: Loop 'VITIS_LOOP_31_5' is marked as complete unroll implied by the pipeline pragma
+remark: ../../src/top.cpp:36:24: Loop 'VITIS_LOOP_36_6' is marked as complete unroll implied by the pipeline pragma
+remark: ../../src/top.cpp:4:0: Unrolling loop 'VITIS_LOOP_19_3' (../../src/top.cpp:19:19) in function 'top' completely with a factor of 16
+remark: ../../src/top.cpp:4:0: Unrolling loop 'VITIS_LOOP_23_4' (../../src/top.cpp:23:24) in function 'top' completely with a factor of 16
+remark: ../../src/top.cpp:4:0: Unrolling loop 'VITIS_LOOP_31_5' (../../src/top.cpp:31:24) in function 'top' completely with a factor of 16
+remark: ../../src/top.cpp:4:0: Unrolling loop 'VITIS_LOOP_36_6' (../../src/top.cpp:36:24) in function 'top' completely with a factor of 16
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0: Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0: Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0: Inlining function 'fp_struct<double>::expv() const' into 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)'
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0: Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned char>::is_signed), bool>::type)' into 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)'
+remark: /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:67:0: Inlining function 'unsigned char generic_cast_IEEE754<unsigned char, double>(double, bool)' into '__hls_fptoui_double_i8'
+remark: ../../src/rgb2gray.cpp:4:0: Inlining function '__hls_fptoui_double_i8' into 'rgb2gray_pixel(rgb_pixel)'

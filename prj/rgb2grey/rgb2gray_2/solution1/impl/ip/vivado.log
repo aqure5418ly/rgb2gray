@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jul 16 23:54:31 2023
+# Process ID: 131142
+# Current directory: /root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/impl/ip/vivado.log
+# Journal file: /root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/impl/ip/vivado.jou
+# Running On: LAPTOP-JF2J0TDM, OS: Linux, CPU Frequency: 3193.878 MHz, CPU Physical cores: 16, Host memory: 16423 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'top_sitodp_32ns_64_6_no_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_sitodp_32ns_64_6_no_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_sitodp_32ns_64_6_no_dsp_0_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 16 23:54:49 2023...

@@ -1,0 +1,45 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Jul 18 13:36:13 2023
+| Host         : LAPTOP-JF2J0TDM running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/rgb2gray_top_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                                   Instance                                  |                                       Module                                       | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                                                |                                                                              (top) |        352 |        352 |       0 |    0 | 470 |      0 |      0 |          7 |
+|   bd_0_i                                                                    |                                                                               bd_0 |        352 |        352 |       0 |    0 | 470 |      0 |      0 |          7 |
+|     hls_inst                                                                |                                                                    bd_0_hls_inst_0 |        352 |        352 |       0 |    0 | 470 |      0 |      0 |          7 |
+|       (hls_inst)                                                            |                                                                    bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst                                                                  |                                                       bd_0_hls_inst_0_rgb2gray_top |        352 |        352 |       0 |    0 | 470 |      0 |      0 |          7 |
+|         (inst)                                                              |                                                       bd_0_hls_inst_0_rgb2gray_top |         64 |         64 |       0 |    0 | 168 |      0 |      0 |          2 |
+|         CTRL_s_axi_U                                                        |                                            bd_0_hls_inst_0_rgb2gray_top_CTRL_s_axi |         94 |         94 |       0 |    0 | 118 |      0 |      0 |          0 |
+|         grp_rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2_fu_76     | bd_0_hls_inst_0_rgb2gray_top_rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2 |        108 |        108 |       0 |    0 | 138 |      0 |      0 |          3 |
+|           (grp_rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2_fu_76) | bd_0_hls_inst_0_rgb2gray_top_rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2 |         91 |         91 |       0 |    0 | 136 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                          |                bd_0_hls_inst_0_rgb2gray_top_flow_control_loop_pipe_sequential_init |         13 |         13 |       0 |    0 |   2 |      0 |      0 |          0 |
+|           mac_muladd_8ns_5ns_16ns_16_4_1_U3                                 |                        bd_0_hls_inst_0_rgb2gray_top_mac_muladd_8ns_5ns_16ns_16_4_1 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          1 |
+|             rgb2gray_top_mac_muladd_8ns_5ns_16ns_16_4_1_DSP48_1_U           |                bd_0_hls_inst_0_rgb2gray_top_mac_muladd_8ns_5ns_16ns_16_4_1_DSP48_1 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           mac_muladd_8ns_7ns_16ns_16_4_1_U2                                 |                        bd_0_hls_inst_0_rgb2gray_top_mac_muladd_8ns_7ns_16ns_16_4_1 |          3 |          3 |       0 |    0 |   0 |      0 |      0 |          2 |
+|             rgb2gray_top_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U           |                bd_0_hls_inst_0_rgb2gray_top_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0 |          3 |          3 |       0 |    0 |   0 |      0 |      0 |          2 |
+|         mul_32ns_32ns_64_1_1_U19                                            |                                  bd_0_hls_inst_0_rgb2gray_top_mul_32ns_32ns_64_1_1 |         59 |         59 |       0 |    0 |   0 |      0 |      0 |          2 |
+|         regslice_both_dst_V_data_V_U                                        |                                         bd_0_hls_inst_0_rgb2gray_top_regslice_both |          9 |          9 |       0 |    0 |  20 |      0 |      0 |          0 |
+|         regslice_both_dst_V_last_V_U                                        |                         bd_0_hls_inst_0_rgb2gray_top_regslice_both__parameterized0 |          5 |          5 |       0 |    0 |   6 |      0 |      0 |          0 |
+|         regslice_both_src_V_data_V_U                                        |                                       bd_0_hls_inst_0_rgb2gray_top_regslice_both_0 |         13 |         13 |       0 |    0 |  20 |      0 |      0 |          0 |
++-----------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

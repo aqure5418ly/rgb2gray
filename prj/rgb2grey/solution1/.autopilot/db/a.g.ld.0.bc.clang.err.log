@@ -1,0 +1,1 @@
+remark: ../src/top.cpp:32:28: Inlining function 'rgb2gray_pixel(rgb_pixel)' into 'rgb2gray_top(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)'

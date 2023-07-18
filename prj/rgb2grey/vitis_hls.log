@@ -1,0 +1,59 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'root' on host 'LAPTOP-JF2J0TDM.' (Linux_x86_64 version 5.15.90.1-microsoft-standard-WSL2) on Sun Jul 16 23:54:16 CST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/root/Xilinx/rgb2grey/prj/rgb2grey'
+Sourcing Tcl script '/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project rgb2gray_2 
+INFO: [HLS 200-10] Opening project '/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files ../../src/rgb2gray.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/rgb2gray.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/rgb2gray.h 
+INFO: [HLS 200-10] Adding design file '../../src/rgb2gray.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/top.cpp 
+INFO: [HLS 200-10] Adding design file '../../src/top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../../src/top.h 
+INFO: [HLS 200-10] Adding design file '../../src/top.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/root/Xilinx/rgb2grey/ip/484
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /root/Xilinx/rgb2grey/ip/484 -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /root/Xilinx/rgb2grey/ip/484 
+Running Dispatch Server on port: 33495
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_dadd_64ns_64ns_64_7_full_dsp_0_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_dmul_64ns_64ns_64_7_max_dsp_0_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'top_sitodp_32ns_64_6_no_dsp_0_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_sitodp_32ns_64_6_no_dsp_0_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_sitodp_32ns_64_6_no_dsp_0_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 16 23:54:49 2023...
+INFO: [HLS 200-802] Generated output file /root/Xilinx/rgb2grey/ip/484/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 21.04 seconds. CPU system time: 0.88 seconds. Elapsed time: 31.14 seconds; current allocated memory: 8.090 MB.
+INFO: [HLS 200-112] Total CPU user time: 23.72 seconds. Total CPU system time: 1.24 seconds. Total elapsed time: 44.23 seconds; peak allocated memory: 758.301 MB.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="rgb2gray.cpp" path="/root/Xilinx/rgb2grey/src/rgb2gray.cpp"/>
+    <originFiles name="rgb2gray.h" path="/root/Xilinx/rgb2grey/src/rgb2gray.h"/>
+    <originFiles name="top.cpp" path="/root/Xilinx/rgb2grey/src/top.cpp"/>
+    <originFiles name="top.h" path="/root/Xilinx/rgb2grey/src/top.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

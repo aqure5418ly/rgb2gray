@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jul 18 13:34:20 2023
+# Process ID: 19768
+# Current directory: /root/Xilinx/rgb2grey/prj/rgb2grey/solution1/impl/verilog
+# Command line: vivado -mode batch -source run_vivadosyn.tcl
+# Log file: /root/Xilinx/rgb2grey/prj/rgb2grey/solution1/impl/verilog/vivado.log
+# Journal file: /root/Xilinx/rgb2grey/prj/rgb2grey/solution1/impl/verilog/vivado.jou
+# Running On: LAPTOP-JF2J0TDM, OS: Linux, CPU Frequency: 3193.882 MHz, CPU Physical cores: 16, Host memory: 16423 MB
+#-----------------------------------------------------------
+source run_vivadosyn.tcl

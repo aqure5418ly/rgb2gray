@@ -1,0 +1,14 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../src/top.cpp, Line: 32, Column: 28 }
+Function:        _Z12rgb2gray_topRN3hls6streamINS_4axisI7ap_uintILi8EELm0ELm0ELm0EEELi0EEES6_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rgb2gray_pixel(rgb_pixel)'
+    DebugLoc:        { File: ../src/rgb2gray.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'rgb2gray_top(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)'
+    DebugLoc:        { File: ../src/top.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...

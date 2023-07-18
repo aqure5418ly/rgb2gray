@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/root\/Xilinx\/rgb2grey\/prj\/rgb2grey\/rgb2gray_2\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "top"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/root\/Xilinx\/rgb2grey\/prj\/rgb2grey\/rgb2gray_2\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "top"
+              }]
+          }
+        }
+      ]
+    }]}

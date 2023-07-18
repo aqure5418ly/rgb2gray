@@ -1,0 +1,136 @@
+
+
+================================================================
+== Synthesis Summary Report of 'rgb2gray_top'
+================================================================
++ General Information: 
+    * Date:           Tue Jul 18 12:19:46 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        rgb2grey
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |                          Modules                         | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |           |           |     |
+    |                          & Loops                         | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +----------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ rgb2gray_top                                            |     -|  0.25|        -|       -|         -|        -|     -|        no|     -|   5 (2%)|  471 (~0%)|   745 (1%)|    -|
+    | + rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2  |     -|  2.55|        -|       -|         -|        -|     -|        no|     -|  2 (~0%)|  161 (~0%)|  457 (~0%)|    -|
+    |  o VITIS_LOOP_17_1_VITIS_LOOP_19_2                       |    II|  7.30|        -|       -|         7|        3|     -|       yes|     -|        -|          -|          -|    -|
+    +----------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 5             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | rows     | 0x10   | 32    | W      | Data signal of rows              |                                                                      |
+| s_axi_CTRL | cols     | 0x18   | 32    | W      | Data signal of cols              |                                                                      |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| dst       | both          | 8     | 1     | 1     | 1      | 1     | 1      |
+| src       | both          | 8     | 1     | 1     | 1      | 1     | 1      |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------------+
+| Argument | Direction | Datatype                                   |
++----------+-----------+--------------------------------------------+
+| src      | in        | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>& |
+| dst      | out       | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>& |
+| rows     | in        | int                                        |
+| cols     | in        | int                                        |
++----------+-----------+--------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+--------------------------------+
+| Argument | HW Interface | HW Type   | HW Info                        |
++----------+--------------+-----------+--------------------------------+
+| src      | src          | interface |                                |
+| dst      | dst          | interface |                                |
+| rows     | s_axi_CTRL   | register  | name=rows offset=0x10 range=32 |
+| cols     | s_axi_CTRL   | register  | name=cols offset=0x18 range=32 |
++----------+--------------+-----------+--------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                                                     | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++----------------------------------------------------------+-----+--------+------------+-----+--------+---------+
+| + rgb2gray_top                                           | 5   |        |            |     |        |         |
+|   sub_fu_112_p2                                          | -   |        | sub        | add | fabric | 0       |
+|   sub15_fu_118_p2                                        | -   |        | sub15      | add | fabric | 0       |
+|   mul_32ns_32ns_64_1_1_U19                               | 3   |        | mul_ln4    | mul | auto   | 0       |
+|  + rgb2gray_top_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_19_2 | 2   |        |            |     |        |         |
+|    add_ln17_fu_201_p2                                    | -   |        | add_ln17   | add | fabric | 0       |
+|    add_ln17_1_fu_207_p2                                  | -   |        | add_ln17_1 | add | fabric | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U2                     | 1   |        | ret_V_5    | mul | dsp48  | 3       |
+|    mul_8ns_9ns_16_1_1_U1                                 | -   |        | ret_V_6    | mul | auto   | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U2                     | 1   |        | ret_V      | add | dsp48  | 3       |
+|    mac_muladd_8ns_5ns_16ns_16_4_1_U3                     | 1   |        | ret_V_3    | mul | dsp48  | 3       |
+|    mac_muladd_8ns_5ns_16ns_16_4_1_U3                     | 1   |        | ret_V_4    | add | dsp48  | 3       |
+|    add_ln19_fu_261_p2                                    | -   |        | add_ln19   | add | fabric | 0       |
++----------------------------------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------+------------------------------------------+
+| Type      | Options                           | Location                                 |
++-----------+-----------------------------------+------------------------------------------+
+| inline    |                                   | ../src/rgb2gray.cpp:5 in rgb2gray_pixel  |
+| interface | axis port=src                     | ../src/top.cpp:5 in rgb2gray_top, src    |
+| interface | axis port=dst                     | ../src/top.cpp:6 in rgb2gray_top, dst    |
+| interface | s_axilite port=rows bundle=CTRL   | ../src/top.cpp:7 in rgb2gray_top, rows   |
+| interface | s_axilite port=cols bundle=CTRL   | ../src/top.cpp:8 in rgb2gray_top, cols   |
+| interface | s_axilite port=return bundle=CTRL | ../src/top.cpp:9 in rgb2gray_top, return |
+| pipeline  |                                   | ../src/top.cpp:20 in rgb2gray_top        |
++-----------+-----------------------------------+------------------------------------------+
+
+

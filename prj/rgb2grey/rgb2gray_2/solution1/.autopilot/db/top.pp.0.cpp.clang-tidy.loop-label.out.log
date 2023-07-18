@@ -1,0 +1,55 @@
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:1559:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:1559:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2533:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2533:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2547:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2547:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2561:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:2561:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:4172:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:4172:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6557:3: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+  for (int i = 0; i < rows; i++) {
+  ^~~
+  VITIS_LOOP_16_1: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6557:3: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6558:5: warning: Added loop label VITIS_LOOP_17_2:   [xilinx-label-all-loops]
+    for (int j = 0; j < cols; j += 16) {
+    ^~~
+    VITIS_LOOP_17_2: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6558:5: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6560:2: warning: Added loop label VITIS_LOOP_19_3:   [xilinx-label-all-loops]
+ for (int k = 0; k < 16; k++) {
+ ^~~
+ VITIS_LOOP_19_3: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6560:2: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6564:7: warning: Added loop label VITIS_LOOP_23_4:   [xilinx-label-all-loops]
+      for (int k = 0; k < 16; k++) {
+      ^~~
+      VITIS_LOOP_23_4: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6564:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6572:7: warning: Added loop label VITIS_LOOP_31_5:   [xilinx-label-all-loops]
+      for (int k = 0; k < 16; k++) {
+      ^~~
+      VITIS_LOOP_31_5: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6572:7: note: FIX-IT applied suggested code changes
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6577:7: warning: Added loop label VITIS_LOOP_36_6:   [xilinx-label-all-loops]
+      for (int k = 0; k < 16; k++) {
+      ^~~
+      VITIS_LOOP_36_6: 
+/root/Xilinx/rgb2grey/prj/rgb2grey/rgb2gray_2/solution1/.autopilot/db/top.pp.0.cpp:6577:7: note: FIX-IT applied suggested code changes
